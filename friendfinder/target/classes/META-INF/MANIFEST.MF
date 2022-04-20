@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: lanegama
+Build-Jdk: 16
+Implementation-Title: SpringBoot-4-JPA-PostgreSQL-RESTfulAPI
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.mycom
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/SpringBoot-4-JPA-PostgreSQL-RESTfulAPI
+Created-By: Maven Integration for Eclipse
+
