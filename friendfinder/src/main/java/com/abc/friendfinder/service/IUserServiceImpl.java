@@ -55,11 +55,11 @@ public class IUserServiceImpl implements IUserService {
 	}
 
 	@Override
-	public Friends acceptFriendRequest(Friends acc) {
-		if (friendReqRepo.existsById(acc.getFriendreq().getId())) {
-			return friendsRepo.saveAndFlush(acc);
+	public Friends acceptFriendRequest(Friends acceptrequest) {
+		if (friendReqRepo.existsById(acceptrequest.getFriendreq().getId())) {
+			return friendsRepo.saveAndFlush(acceptrequest);
 		} else {
-			return acc;
+			return acceptrequest;
 		}
 	}
 
