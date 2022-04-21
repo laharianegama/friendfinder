@@ -42,9 +42,10 @@ public class IComplaintServiceImpl implements IComplaintService {
 	@Override
 	public boolean resolveComplaint(Complaint complaint) {
 		if (complaintRepo.existsById(complaint.getId())) {
-			return false;
-		} else {
+			complaintRepo.deleteById(complaint.getId());
 			return true;
+		} else {
+			return false;
 		}
 	}
 
